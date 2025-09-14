@@ -38,7 +38,7 @@ function UpdateProduct() {
         formData.append("img", img)
         formData.append("category", category)
 
-        axios.put(`http://localhost:5000/update/product/${params.id}`, formData)
+        axios.put(`http://localhost:5000/readSingle/product/${params.id}`, formData)
             .then(() => {
                 toast.success("Product updated successfully! 🎉")
                 setTimeout(() => {
